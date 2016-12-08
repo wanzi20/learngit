@@ -1,0 +1,103 @@
+*{margin: 0;padding: 0;font-family: 微软雅黑;}
+ul{list-style: none;}
+a{text-decoration: none;color: #999;}
+.fr{float: right;}
+img{border: none;}
+a:hover{text-decoration: underline;}
+#container,.header,.links{width: 1320px;}
+#container{
+	height: 852px;	
+	background-color: #f7f7f7;
+	margin: 50px auto;
+}
+.header{
+	font-size: 12px;
+	height: 162px;
+	color: #999999;
+	background: url(../img/logo2.jpg) no-repeat left 40px;
+}
+.top-txt{
+	color: #777;
+	margin: 70px 28px 0 0;
+}
+.help{		
+	line-height:30px;
+	margin:70px 44px 0 0;	
+}
+.help2{
+	border: 1px solid #999999;	
+}
+.help ul{	
+}
+.help ul li{
+	border-top: 1px dashed #999999;
+	text-align: center;
+	height: 30px;
+}
+.help ul:hover a{
+	color: red;
+}
+.top-txt a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.content{
+	position: relative;
+	width: 1300px;
+	border: 10px solid #e8e8e8;
+	background:#FFFFFF url(../img/login.jpg) no-repeat 30px 30px;
+}
+
+.links{
+	position: relative;
+	height: 140px;
+}
+.links ul{
+	position: absolute;
+	left:286px;
+	top: 60px;
+}
+.links ul li{	
+	float: left;
+	margin-right: 85px;
+}
+.links ul li a{
+	font-weight: bold;
+	color: #656766;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

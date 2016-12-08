@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/shoppingcat.css" />	
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			function add(){
+				var num=$('table tr').find('b').text();
+				num++;
+				$('table tr').find('b').text(num);
+				countPrice();
+			}
+			function minus(){
+				var num=$('table tr').find('b').text();
+				num--;
+				if(num<0){num=0}
+				$('table tr').find('b').text(num);
+				countPrice();
+			}
+			function formatCurrency(num) {  
+			    num = num.toString().replace(/\$|\,/g,'');  
+			    if(isNaN(num))  
+			        num = "0";  
+			    sign = (num == (num = Math.abs(num)));  
+			    num = Math.floor(num*100+0.50000000001);  
+			    cents = num%100;  
+			    num = Math.floor(num/100).toString();  
+			    if(cents<10)  
+			    cents = "0" + cents;  
+			    for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)  
+			    num = num.substring(0,num.length-(4*i+3))+','+  
+			    num.substring(num.length-(4*i+3));  
+			    return (((sign)?'':'-') + num + '.' + cents);  
+			} 
+			function countPrice(){
+				var finallyPrice=0;
+				$('table tr').each(function(){
+					var num=$(this).find('b').text();
+				
+					var price=$(this).find('.one-price').text();
+					
+					finallyPrice=parseInt(num)*parseInt(price);
+				});
+				$('.finally-price').text(formatCurrency(finallyPrice));
+			}
+			$(function(){
+				var aImg=$.cookie('img');
+				var aName=$.cookie('name');
+				var aPrice=$.cookie('price');
+				var aNum=$.cookie('num');
+				if($.cookie('name')){
+					if(aImg.length==1){
+						aImg=$.cookie('img').split('');
+						aName=$.cookie('name').split('');
+						aNum=$.cookie('num').split('');
+						aPrice=$.cookie('price').split('');
+					}else{
+						aImg=$.cookie('img').split(',');
+						aName=$.cookie('name').split(',');
+						aNum=$.cookie('num').split(',');
+						aPrice=$.cookie('price').split(',');
+					}
+					
+				}
+				for(var i=0;i<aName.length;i++){
+					init(aImg[i],aName[i],aPrice[i],aNum[i]);
+
+				}
+				function init(aImg,aName,aPrice,aNum){
+					var str='<tr data-title="'+aName+'"><td><a href="product.html"><img class="good-cat" src='+aImg+'></a></td><td>'+aName+'</td><td><a href="javascript:" onclick="minus()"><img src="../img/num-.gif"></a><b>'+aNum+'</b><a href="javascript:" onclick="add()"><img src="../img/numadd.gif"></a></td><td><span>￥</span><span class="one-price">'+aPrice+'</span></td><td><span>￥</span> 0.00</td><td><a href="">删除</a></td></tr>';
+					$('table tr:last').after(str);
+				};
+				
+				
+				countPrice();
+				
+			});
+		</script>
+
+	</head>
+	<body>
+		<div id="top1">
+			<div id="t1-con">
+				<div id="t1-left">
+					<img src="../img/xing.gif">
+					<p>收藏本站</p>
+				</div>
+				<div id="t1-right">					
+					<div class="t1-2 fr">
+						<a href="html/login.html">会员中心</a>|
+						<a href="html/login.html">我的订单</a>|
+						<a href="#">帮助中心</a>|
+						<a href="#">电子型录</a>|
+						<a href="#">移动客户端</a>
+					</div>
+					<div class="t1-1 fr">
+						您好<a href="login.html">15093178095</a> , 欢迎来到央广购物！<a href="#">退出</a>				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top2">
+			<div id="t2-con">
+				<a href="#">
+					<img style="margin-top: 7px;" src="../img/logo.jpg" alt="央广购物" title="央广购物">
+				</a>
+				<div class="search">
+					<input type="text" class="search-t fl" placeholder="输入您想要的商品ID/名称">
+					<input type="button" class="search-btn fl">
+				</div>
+				<div class="new-zb">
+					<div class="new-zb1 fl">
+						<a href="#"><img src="../img/1a.jpg"></a>
+					</div>					
+					<div class="new-zb2 fl">
+						<a href="#"><img src="../img/1new-zb.jpg"></a>
+						<p><a href="#">金星四核5英寸大屏手机</a><b>￥488</b></p>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top3">
+			<div id="t3-con">
+				<img src="../img/1b.jpg" style="margin-top: 12px ;">
+				<ul id="t-nav">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">品牌旗舰店</a></li>
+					<li><a href="#">今日特惠</a></li>
+					<li><a href="#">正在直播</a></li>
+					<li><a href="#">新品上市</a></li>
+					<li><a href="#" style="color: #fff;">清仓频道</a></li>
+					<li><a href="#">换购商城</a></li>
+					<img src="../img/n_new.gif" style="position:absolute;top: -15px;left: 410px;">
+				</ul>
+				<div id="shopping">					
+					<span>0</span>
+					<a href="#">购物车</a>				
+				</div>
+			</div>
+		</div>
+		<div id="top4">
+			<div id="t4-con">
+				<ul id="t4-nav">
+					<li>
+						<a href="#">流行时尚</a>
+						<div class="nav-box  nav-box-left">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>						
+					</li>
+					<li>
+						<a href="#">珠宝饰品</a>
+						<div class="nav-box  nav-box-left">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>	
+						
+					</li>
+					<li>
+						<a href="#">美容用品</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>	
+					</li>
+					<li>
+						<a href="#">厨房用品</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>	
+					</li>
+					<li>
+						<a href="#">厨房电器</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>					
+					</li>
+					<li>
+						<a href="#">家庭生活</a>
+						<div class="nav-box  nav-box-middle">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>	
+				
+					</li>
+					<li>
+						<a href="#">数码家电</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>					
+					</li>
+					<li>
+						<a href="#">礼品收藏</a>
+						<div class="nav-box nav-box-right">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>					
+					</li>
+					<li style="border-right: none;">
+						<a href="#">食品酒水</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								
+							</div>
+							<div class="nav-right fl">
+								
+							</div>
+						</div>	
+					</li>					
+				</ul>
+			</div>
+		</div>
+		<div id="top5">
+			<div id="t5-con">
+				<div class="move-txt">
+					<p class="move-p">中国辣妈秀哈尔滨赛区辣妈招募中！活动全程免费，报名即可得丰厚见面礼。点击报名专题，立即加入“中国辣妈秀”！</p>
+				</div>	
+			</div>
+		</div>
+		<div id="container2">
+			<div class="title2">
+				<a href="../index.html">首页</a>> 购物车
+			</div>
+			<div class="center-pic"></div>
+			<div class="order-tab">
+				<h2>电视购物</h2>
+				<table>
+					<tr class="tr1">
+						<td>商品图像</td>
+						<td>商品名称</td>
+						<td>数量</td>
+						<td>单价</td>
+						<td>优惠</td>
+						<td>删除</td>
+					</tr>
+				</table>
+			</div>
+			<div class="order-txt">
+				<div class="ot-right">
+					<strong>总结算金额：￥<span class="finally-price">17940.00</span></strong>&nbsp;&nbsp;
+					<a href="">全部删除</a><br>
+					<a href=""><img class="settle" src="../img/jiesuan.gif"></a><br>
+					<p>网络支付98折(仅幸福价商品)</p>
+				</div>				
+			</div>
+		</div>
+		<div id="m6-con">
+				<div class="m6-bot">
+					<ul>
+						<li style="background: url(../img/m51.gif) no-repeat 18px 6px;">
+							<span>购物指南</span>
+							<div class="li">
+								<a href="#">用户注册流程</a><br>
+								<a href="#">电视会员登录</a><br>
+								<a href="#">网站订购流程</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m52.gif) no-repeat 18px 6px;">
+							<span>会员中心</span>
+							<div class="li">
+								<a href="#">会员等级</a><br>
+								<a href="#">会员权益</a><br>
+								<a href="#">我的幸福金</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m53.gif) no-repeat 18px 6px;">
+							<span>配送服务</span>
+							<div class="li">
+								<a href="#">配送范围</a><br>
+								<a href="#">配送时间</a><br>
+								<a href="#">运费说明</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m54.gif) no-repeat 18px 6px;">
+							<span>支付说明</span>
+							<div class="li">
+								<a href="#">货到付款</a><br>
+								<a href="#">在线支付</a><br>
+								<a href="#">幸福购物卡</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m55.gif) no-repeat 18px 6px;">
+							<span>顾客服务</span>
+							<div class="li">
+								<a href="#">服务政策总则</a><br>
+								<a href="#">退换货政策</a><br>
+								<a href="#">先行赔付</a>
+							</div>								
+						</li>
+					</ul>
+				</div>					
+			</div>
+		
+		<div id="bottom">
+			<div id="bot-con">
+				<div class="b-pic1"></div>
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">招商合作</a></li>
+					<li><a href="#">成为供应商</a></li>
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">友情链接</a></li>
+					<li><a href="#"><img src="../img/bottom2.jpg"></a></li>
+				</ul>
+				<div class="b-txt">
+					Copyright©2010-2016 cnrmall. All Rights Reserved<br>
+					京ICP备10038858号 京公网安备：11011502002190<br>
+					食品流通许可证编号：SP1101151210063489<br>
+					企业营业执照注册号：110102012202484   企业法人： 董铁明<br>
+					央广幸福购物（北京）有限公司<br>
+					住所：北京市大兴区西红门镇北兴路（东段）2号星光影视园新媒体大厦<br>
+					经营场所：北京市大兴区西红门镇北兴路（东段）2号院20号楼5层 5018号<br>
+					我司投诉专线为：4008518518转5号键<br>
+					北京市工商行政管理局大兴分局兴政街工商所，投诉监督电话：010-69254218
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>

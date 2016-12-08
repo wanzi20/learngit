@@ -1,0 +1,91 @@
+*{margin: 0;padding: 0;font-family: 微软雅黑;}
+body{
+	font-size: 12px;	
+}
+.content{
+	height: 485px;		
+}
+.reg-wrap{
+	position: absolute;
+	right: 194px;
+	height: 485px;
+	width: 342px;
+}
+.reg-wrap p{
+	height:30px;
+	line-height: 66px;
+}
+.reg-wrap p span{
+	display: block;	
+	float: left;
+}
+.reg-wrap .p-right{
+	margin-left:120px;
+}
+.reg-wrap p a{
+	color: #005da7;
+}
+.reg-box .txt1{
+	width: 330px;
+	height: 39px;
+}
+.reg-box .yzm{
+	width: 341px;
+	height: 39px;
+}
+.reg-box .yzm a{
+	display: inline-block;
+	height: 39px;
+	width: 130px;
+	position: absolute;
+	left: 150px;
+}
+.reg-box .yzm img{
+	height: 39px;
+	width: 130px;
+}
+input{
+	height: 39px;
+	width: 130px;	
+	border: 1px solid #cccccc;
+	padding-left: 10px;
+	outline-color: green;
+}
+.sele{
+	width: 15px;
+	height: 15px;
+}
+.regg{
+	height: 38px;
+}
+.regg .terms{
+	color: red;
+}
+.register-btn{
+	display: block;
+	color: #FFFFFF;
+	font-size: 22px;
+	width: 341px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	border: none;
+	outline: none;	
+	margin-top: 15px;	
+	background-color: #f35357;	
+}
+.register-btn:hover{
+	text-decoration: none;
+}
+.bbox{
+	color: red;
+	line-height: 20px;
+	height: 23px;
+}
+
+
+
+
+
+

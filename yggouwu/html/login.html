@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>	
+		<link rel="stylesheet" href="../css/login.css" />
+		<link rel="stylesheet" href="../css/login1.css" />
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script>
+			$(function(){
+		        $(".login-tab li").click(function(){
+		       		$(".login-tab li").eq($(this).index()).addClass("active").siblings().removeClass('active');
+					$(".box").hide().eq($(this).index()).show();
+				});
+			});
+		</script>
+		<style>
+			.con1 .err{
+				outline-color: red;
+				border-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="header">
+				<div class="help fr">
+					<div class="help2">
+					<span>
+						<i><img src="../img/help.jpg"></i>
+						帮助中心
+						<i><img src="../img/sel-icon.jpg"></i>
+					</span>
+					<ul>
+						<li><a href="#">注册流程</a></li>
+						<li><a href="#">电视会员登录</a></li>
+						<li><a href="#">网站订购流程</a></li>
+						<li><a href="#">会员权益</a></li>
+					</ul>
+					</div>
+				</div>
+				
+				<div class="top-txt fr">
+					您好，欢迎光临央广购物 |<a href="login.html"> 请登录</a>					
+				</div>
+			</div>
+			<div class="content">
+				<div class="login-box">
+					<ul class="login-tab">
+						<li class="active"><a href="javascript:;">用户名登录</a></li>
+						<li><a href="javascript:;">手机号快速登录</a></li>						
+					</ul>
+					<div class="border"></div>	
+					<div class="box active" style="border-top: none;">
+						<form name="userlogin" class="userlogin">	
+							<div class="con1">
+								<p>用户名/手机号</p>
+								<input type="text" class="txt user">
+							</div>
+							<div class="con1">
+								<p>密码</p>
+								<input type="password" class="txt password">
+								<span>请输入密码</span>
+								<span>密码错误<a href="#">找回密码</a></span>
+							</div>
+							<div class="con2">
+								<input type="checkbox" class="select1">记住用户名
+								<input type="checkbox" class="select2">自动登录
+							</div>
+							<div class="con3">
+								<a href="javascript:" onclick="check()" class="login-btn">登 录</a>
+								<a href="#" class="tt1 fr">忘记密码</a>
+								<span class="fr"> | </span> 
+								<a href="register.html" class="tt1 fr">免费注册</a>&nbsp;
+							</div>
+							<div class="con4">
+								合作网站账户登录
+								<a href="#"></a>
+							</div>
+						</form>
+					</div>
+					<div class="box" style="border-top: none;">
+						<form name="userlogin" class="userlogin">	
+							<div class="con1">
+								<p>手机号</p>
+								<input type="text" class="txt user">
+								<span>用户名/手机号错误</span>
+							</div>
+							<div class="con1">
+								<p>密码</p>
+								<input type="password" class="txt password">
+								<span>请输入密码</span>
+								<span>密码错误<a href="#">找回密码</a></span>
+							</div>
+							<div class="con2">
+							</div>
+							<div class="con3">
+								<a href="javascript:" onclick="check()" class="login-btn">登 录</a>
+								<a href="register.html" class="tt1 fr">免费注册</a>&nbsp;
+							</div>
+							<div class="con4">
+								合作网站账户登录
+								<a href="#"></a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="links">
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">招商合作</a></li>
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">友情链接</a></li>
+					<li><a href="#"><img src="../img/small-logo.jpg" style="margin:-5px 0 0 -30px"></a></li>
+				</li>
+			</div>
+		</div>
+		<script>
+			var nText='请输入用户名',tz=false;
+			$('.user').blur(function(){
+				if($(this).val()==''){
+					$(this).val(nText).addClass('err');
+					tz=false;
+				}else{
+					$(this).removeClass('err');
+					tz=true;
+				}
+			}).focus(function(){
+				if($(this).val()===nText){
+					$(this).val('');
+				}
+				
+			});
+			function check(){
+				if(tz && $('.user').val()!=nText){
+					window.location.href='VIPcenter.html';
+				}else{
+					$('.user').val(nText).select().addClass('err');
+				}
+			}
+
+		</script>
+	</body>
+</html>

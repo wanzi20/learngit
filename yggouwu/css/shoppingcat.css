@@ -1,0 +1,90 @@
+a{color: #666;}
+*{margin: 0;padding: 0;font-family: 微软雅黑;}
+a:hover{color: #CC0000;text-decoration: underline;}
+#container2{
+	width: 1000px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+.title2{
+	line-height: 34px;
+	text-indent: 22px;
+	background: url(../img/H.gif) no-repeat left 10px;
+}
+.center-pic{
+	width: 1000px;
+	height: 278px;
+	background: url(../img/cat.jpg) no-repeat 150px 10px;
+}
+.order-tab h2{
+	line-height: 38px;
+	height: 38px;
+	color: #b52839;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(../img/dsgw.gif) no-repeat left;
+	padding-left: 25px;
+}
+.order-tab table{
+	width: 990px;
+	height: 152px;
+	margin:0 auto;
+	text-align: center;
+	border-spacing: 0;
+	border: 1px solid #dedede;
+}
+.order-tab table span{
+	color: red;
+}
+.order-tab .tr1{
+	width: 980px;
+	height: 50px;
+	background-color: #f7f7f7;
+	border: 1px solid #dedede;
+}
+.order-tab .tr1 td{
+	border-bottom: 1px solid #dedede;
+}
+.order-tab .good-cat{
+	width: 70px;
+	height: 70px;
+	border: 1px solid #dedede;
+}
+.order-txt{
+	height: 166px;
+	background: url(../img/jxgw.gif) no-repeat left 86px;
+}
+.ot-right strong{
+	font-size: 20px;
+}
+.ot-right strong span{
+	color: #CC0000;
+}
+.ot-right a{
+	font-size: 18px;
+	color: #003399;
+}
+.ot-right{
+	margin-top: 20px;
+	line-height: 48px;	
+	float: right;
+	width: 350px;
+	height: 150px;
+}
+.ot-right .settle{
+	margin-left: 270px;
+}
+.ot-right p{
+	font-size: 14px;
+	color: #666;
+	line-height: 58px;
+	text-align: right;
+}
+
+
+
+
+
+
+
+

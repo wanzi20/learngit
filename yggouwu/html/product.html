@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/product.css"/>
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script>
+			$(function(){
+		        $(".con-nav li").click(function(){
+		       		$(".con-nav li").eq($(this).index()).addClass("active").siblings().removeClass('active');
+					$(".li-inform").hide().eq($(this).index()).show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="top1">
+			<div id="t1-con">
+				<div id="t1-left">
+					<img src="../img/xing.gif">
+					<p>收藏本站</p>
+				</div>
+				<div id="t1-right">					
+					<div class="t1-2 fr">
+						<a href="#">会员中心</a>|
+						<a href="#">我的订单</a>|
+						<a href="#">帮助中心</a>|
+						<a href="#">电子型录</a>|
+						<a href="#">移动客户端</a>
+					</div>
+					<div class="t1-1 fr">
+						您好<a href="login.html">15093178095</a> , 欢迎来到央广购物！<a href="#">退出</a>				
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top2">
+			<div id="t2-con">
+				<a href="#">
+					<img style="margin-top: 7px;" src="../img/logo.jpg" alt="央广购物" title="央广购物">
+				</a>
+				<div class="search">
+					<input type="text" class="search-t fl" placeholder="输入您想要的商品ID/名称">
+					<input type="button" class="search-btn fl">
+				</div>
+				<div class="new-zb">
+					<div class="new-zb1 fl">
+						<a href="#"><img src="../img/1a.jpg"></a>
+					</div>					
+					<div class="new-zb2 fl">
+						<a href="#"><img src="../img/1new-zb.jpg"></a>
+						<p><a href="#">金星四核5英寸大屏手机</a><b>￥488</b></p>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top3">
+			<div id="t3-con">
+				<img src="../img/1b.jpg" style="margin-top: 12px ;">
+				<ul id="t-nav">
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="#">品牌旗舰店</a></li>
+					<li><a href="#">今日特惠</a></li>
+					<li><a href="#">正在直播</a></li>
+					<li><a href="#">新品上市</a></li>
+					<li><a href="#" style="color: #fff;">清仓频道</a></li>
+					<li><a href="#">换购商城</a></li>
+					<img src="../img/n_new.gif" style="position:absolute;top: -15px;left: 410px;">
+				</ul>
+				<div id="shopping">					
+					<span>0</span>
+					<a href="#">购物车</a>				
+				</div>
+			</div>
+		</div>
+		<div id="top4">
+			<div id="t4-con">
+				<ul id="t4-nav">
+					<li>
+						<a href="#">流行时尚</a>
+						<div class="nav-box  nav-box-left">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>						
+					</li>
+					<li>
+						<a href="#">珠宝饰品</a>
+						<div class="nav-box  nav-box-left">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>	
+						
+					</li>
+					<li>
+						<a href="#">美容用品</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>	
+					</li>
+					<li>
+						<a href="#">厨房用品</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>	
+					</li>
+					<li>
+						<a href="#">厨房电器</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>					
+					</li>
+					<li>
+						<a href="#">家庭生活</a>
+						<div class="nav-box  nav-box-middle">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+					
+						</div>	
+				
+					</li>
+					<li>
+						<a href="#">数码家电</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>					
+					</li>
+					<li>
+						<a href="#">礼品收藏</a>
+						<div class="nav-box nav-box-right">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>					
+					</li>
+					<li style="border-right: none;">
+						<a href="#">食品酒水</a>
+						<div class="nav-box  nav-box-right">
+							<div class="nav-left fl">
+								<a href="">手表机械表 电子表 其他 <br>流行饰品饰品套组 其他  <br>高档珠宝金银首饰 钻石 宝石（红宝、蓝宝、半宝石、其他宝石） 玉石 珍珠 水晶 <br> 玛瑙 其他 </a>
+							</div>
+							<div class="nav-right fl">
+								<a href="">热门品牌 <br>
+							娇韵诗 翠璨 银生 宝腾钰坊 <br> 瑞士军表 CM 宾爵 其他品牌 <br> BOSSWAY 琦玉坊 朔麟 菲润  <br>Titania 新光饰品 David Sigal <br> 新光 繁诺 JOJO 懋隆  <br>AURORA 					保罗马克 善美珠宝  <br>三度士 颂禧 MARC 庆玺珠宝 <br> HB 喜歌 Hilary ARSA <br> 天使之泪 御凤轩 庆玺 AM <br> JDM HAGIT 圣珀尔 庆永祥 <br> 伊卡 尚上品 福沁祥 泰金嘉 <br> 俪锦 Justcavalli Zuman </a>
+							</div>
+						</div>	
+					</li>					
+				</ul>
+			</div>
+		</div>
+		<div id="top5">
+			<div id="t5-con">
+			</div>
+		</div>
+		<div id="container">
+			<div class="return"></div>
+			<div class="con-top">
+				当前位置：<a href="#">珠宝</a> >
+				<a href="#">高档珠宝</a> >
+				<a href="#">玉石</a> >
+				<a href="#">福在眼前和田玉吊牌</a>
+			</div>
+			<div class="con-left">
+				<div class="con-left1">
+					<h5>珠宝 分类</h5>
+					<div class="con-left11">
+						<dl>
+							<dt><a href="#">> 手表</a></dt>
+							<dd><a href="#">机械表</a></dd>
+							<dd><a href="#">电子表</a></dd>
+							<dd><a href="#">其他</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">> 流行饰品</a></dt>
+							<dd><a href="#">饰品套组</a></dd>
+							<dd><a href="#">其他</a></dd>													
+						</dl>
+						<dl>
+							<dt><a href="#">> 高档珠宝</a></dt>
+							<dd><a href="#">金银首饰</a></dd>	
+							<dd><a href="#">钻石</a></dd>
+							<dd><a href="#">宝石</a></dd>
+							<dd><a href="#">玉石</a></dd>
+							<dd><a href="#">珍珠</a></dd>
+							<dd><a href="#">水晶</a></dd>
+							<dd><a href="#">玛瑙</a></dd>
+							<dd><a href="#">其他</a></dd>
+						</dl>				
+					</div>					
+				</div>
+				<div class="con-left2">
+					<p>浏览此类商品的用户最终购买了</p>
+					<a class="other" href="#"><img src="../img/yu.jpg"></a>
+					<span><a href="#">善美平安无事方牌</a></span>
+					<b>￥598.00</b>
+				</div>
+				<div class="con-left3">
+					<p>新品推荐</p>
+					<ul>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj1.jpg"></a></dt>
+								<dd><a href="javascript:;">琪禧和田玉平安无事牌挂件套组</a><br><span>￥ 888</span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj2.jpg"></a></dt>
+								<dd><a href="javascript:;">集美印象黑曜石套组</a><br><span>￥498</span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj3.jpg"></a></dt>
+								<dd><a href="javascript:;">福在眼前和田玉吊牌</a><br><span>￥ 5980</span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj4.jpg"></a></dt>
+								<dd><a href="javascript:;">玉琳宝珑富贵花开和田玉套组</a><br><span>￥ 899</span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj5.jpg"></a></dt>
+								<dd><a href="javascript:;">玉琳宝珑富贵满袋和田碧玉套组</a><br><span>￥ 1298</span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj6.jpg"></a></dt>
+								<dd><a href="javascript:;">翠璨缘定三生碧玺套组</a><br><span>￥ 5980</span></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="con-left3">
+					<p>您最近浏览的商品</p>
+					<ul>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj1.jpg"></a></dt>
+								<dd><a href="javascript:;">琪禧和田玉平安无事牌挂件套组</a><br><span>￥ 888</span></dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:;"><img src="../img/sptj2.jpg"></a></dt>
+								<dd><a href="javascript:;">集美印象黑曜石套组</a><br><span>￥498</span></dd>
+							</dl>
+						</li>								
+					</ul>
+				</div>
+			</div>
+			<div class="con-right">
+				<div class="con-right1">
+					<div class="con-right11 fl">商品图片</div>
+					<div class="con-right12 fl"></div>	
+					<div class="con-right13 fl">商品编号</div>	
+				</div>
+				<div class="con-right2">
+					<div class="con-right21 fl">
+						<div class="middle-good">
+							<div class="zoomarea"></div>
+							<img src="../img/hty.jpg">
+						</div>
+						<div class="small-good-box">
+							<div class="direction-btn">
+								<a class="left-btn" href="javascript:;"><img src="../img/left.gif"></a>
+								<a class="right-btn" href="javascript:;"><img src="../img/right.gif"></a>
+							</div>
+							<ul class="small-good">
+								<li><a href=""><img class="car-img" src="../img/hty.jpg"></a></li><li><a href=""><img src="../img/hty2.jpg"></a></li>
+							</ul>						
+						</div>	
+					</div>
+					<div class="con-right22 fl">
+						<div class="big-good"><img src="../img/hty.jpg"></div>
+						<div class="alert-box">
+							<a class="close" href=""><img src="../img/close.jpg"></a>
+							<h3>此商品已成功加入购物车！</h3>
+							<p>
+								<a class="jiesuan" href="shoppingcat.html">去结算</a>
+								<a class="go" href="javascript:;">继续购物</a>
+							</p>
+							
+						</div>
+						<div class="xq1">
+							<h2 class="car-title">福在眼前和田玉吊牌</h2>
+							<p>品牌：<a href="javascript:;">卓楷</a></p>
+						</div>
+						<div class="xq2">
+							<p>幸福价：￥<strong class="car-price">5980.00</strong></p>
+							<p>赠幸福金：59.8</p>
+						</div>
+						<div class="xq3">
+							<p>
+								数量：
+								<a><img src="../img/num-.gif"></a>
+								<input class="car-num" type="text" value="1">
+								<a><img src="../img/numadd.gif"></a>
+							</p>
+							<p><span>配送至：</span><div class="address">请选择地区</div></p>
+						</div>
+						<div class="xq4">
+							<a href="shoppingcat.html"><img src="../img/gm.jpg"></a>
+							<a class="add-cat" href="javascript:;"><img src="../img/add-cat.jpg"></a>
+						</div>
+						<div class="xq5">
+							<div class="xq5-left fl">不支持15天无理由退换货</div>
+							<div class="xq5-right fl">提供正规发票</div>
+						</div>
+						<div class="xq6">
+							
+						</div>
+					</div>
+				</div>	
+				<div class="con-right3">
+					<div class="con-right31 fl">
+						<ul>
+							<li>
+								<a href="javascript:;"><img src="../img/tjsp1.jpg"></a>
+								<p><a href="javascript:;">中国白银吉祥</a></p>
+								<span>￥350</span>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="../img/tjsp2.jpg"></a>
+								<p><a href="javascript:;">中国白银吉祥</a></p>
+								<span>￥350</span>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="../img/tjsp3.jpg"></a>
+								<p><a href="javascript:;">中国白银吉祥</a></p>
+								<span>￥350</span>
+							</li>
+							<li>
+								<a href="javascript:;"><img src="../img/tjsp4.jpg"></a>
+								<p><a href="javascript:;">中国白银吉祥</a></p>
+								<span>￥350</span>
+							</li>
+						</ul>
+					</div>
+					<div class="con-right32 fl">
+						<ul>
+							<li>1. <a href="javascript:;">【每周TOP榜 值得买的全在这里】</a></li>
+							<li>2. <a href="javascript:;">【央广国宝苑 当代书画艺术交流平台】</a></li>
+							<li>3. <a href="javascript:;">【中国辣妈秀 与您分享辣妈魅力瞬间】</a></li>
+							<li>4. <a href="javascript:;">【三佳玉业品牌旗舰店 买即赠红玛瑙手链一条】</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="con-right4">
+					<ul class="con-nav">
+						<li class="active"><a href="javascript:;">商品描述</a></li>
+						<li><a href="javascript:;">用户评论</a></li>
+						<li><a href="javascript:;">如何购买</a></li>
+						<li><a href="javascript:;">售后服务</a></li>
+					</ul>
+					<div class="active li-inform discribe">
+							<div class="txt-introduce">
+								<div class="spgy">
+									<div class="spgy1">
+										<p>											
+											<strong>产品名称：</strong>福在眼前和田玉吊牌<br>											
+											<strong>主品配置：</strong>吊牌*1、附件：证书*1<br>											
+											<strong>产品品牌：</strong>卓楷<br>
+											<strong>主品材质：</strong>和田玉 黑曜石<br>
+											<strong>产品颜色：</strong>白色、黑色<br>
+											<strong>主品重量：</strong>吊坠总重不低于42克
+										</p>
+										<p>
+											<strong>主品尺寸：</strong>吊牌宽不低于4cm；高不低于4.4cm；绳长不低于62cm<br>
+											<strong>赠品配置：</strong>黑曜石吊坠*1；附件：证书*1<br>
+											<strong>赠品尺寸：</strong>吊牌高不低于4.8cm；宽不低于3.5cm；绳长不低于60cm
+										</p>
+									</div>
+								</div>
+								<div class="sptd">
+									福在眼前和田玉吊牌<br>
+									佩戴、赠送！<br><br>
+									● 玉质细腻。<br>
+									● 寓意吉祥
+								</div>
+								<div class="zysx">
+									售后服务：执行三包。<br>
+									注意事项：避免碰撞。
+								</div>
+							</div>	
+							<div class="pic-introduce">
+								<ul>
+									<li><img src="../img/goodjs1.jpg"></li>
+									<li><img src="../img/goodjs2.jpg"></li>
+									<li><img src="../img/goodjs3.jpg"></li>
+									<li><img src="../img/goodjs4.jpg"></li>
+									<li><img src="../img/goodjs5.jpg"></li>
+									<li><img src="../img/goodjs6.jpg"></li>
+									<li><img src="../img/goodjs7.jpg"></li>
+									<li><img src="../img/goodjs8.jpg"></li>
+									<li><img src="../img/goodjs9.jpg"></li>
+									<li><img src="../img/goodjs10.jpg"></li>
+									<li><img src="../img/goodjs11.jpg"></li>
+									<li><img src="../img/goodjs12.jpg"></li>
+									<li><img src="../img/goodjs13.jpg"></li>
+								</ul>
+							</div>
+					</div>
+					<div class="li-inform comment">	
+						<div class="com-center">
+							<p>暂无评论</p>
+							<ul>
+								<li>■ 好评 <span></span> 0%</li>
+								<li>■ 中评 <span></span> 0%</li>
+								<li>■ 差评 <span></span> 0%</li>
+							</ul>
+							<div class="com-btn">
+								<a href="javascript:;"><img src="../img/wypl.jpg"></a>
+							</div>
+						</div>
+					</div>
+					<div class="li-inform buy">
+						<p>央广购物网站为您提供多种支付方式：</p>	
+						<table>
+							<thead>
+								<tr>
+									<td class="td1">支付方式</td>
+									<td>支付说明</td>
+								</tr>
+							</thead>
+							
+							<tr class="tr1">
+								<td class="td1">网上支付</td>
+								<td style="background: url(../img/zf.jpg) no-repeat 13px 13px;"></td>
+							</tr>
+							<tr class="tr2">
+								<td class="td1">货到付款</td>
+								<td>1、选择货到付款支付方法的您，请确保已留下有效的个人联系信息。<br>
+2、如因您所提供的个人信息有误而导致的商品送达时间延误及订单取消等后果，本网站不承担任何责任。</td>
+							</tr class="tr3">
+							<tr>
+								<td class="td1">会员卡支付</td>
+								<td>
+									使用央广购物卡支付
+									<div class="td-pic">
+										<img src="../img/300.jpg">
+										<img src="../img/500.jpg">
+										<img src="../img/1000.jpg">
+									</div>									
+								</td>
+							</tr>
+							<tr class="tr4">
+								<td class="td1">银行汇款</td>
+								<td>银行汇款 开户名：央广幸福购物（北京）有限公司<br>
+									开户行：中国工商银行北京复外支行<br>
+									账 号：0200048509099039526
+								</td>
+							</tr>
+						</table>
+						<dl>
+							<dt><strong>配送说明</strong></dt>
+							<dd>
+								1、订购发出后，您可以通过我们发出的订单确认邮件或者在"我的订单"中查询订单发货时间。<br>
+								2、请您务必在订单中填写真实姓名和具体收货地址（省、市、县/镇、街道名称及门牌号），以便订单顺利投递。<br>
+								3、送货上门时间： 09:00-18:00。
+							</dd>
+						</dl>
+					</div>
+					<div class="li-inform afer-sale">
+						退、换货范围：<br>
+央广购物遵循《消费者权益保护法》、国家“三包”政策及相关法律、法规规定，在商品完好的情况下，在您收到商品之日起15天免费退货，30天内免费换新。<br>
+退、换货原则：<br>
+（1）换货原则：自央广购物客服受理后，会及时委托专业物流公司到您府上更换商品，请确认需更换的商品、包装及其他相关附件完好。<br>
+（2）退货原则：央广购物所售商品均来自正规进货渠道，每张订单均享有退货保障，请妥善保持送货时商品的完好（包括但不限于发票、赠品、包装等相关附件），并在退货时一并退回。如有遗失，央广购物将不予受理。<br>
+特殊商品退、换货原则：<br>
+1．3C数码商品中的内存卡或充值卡请您不要拆封，原厂包装打开、安装电池、开机启动恕不接受退、换货。<br>
+2．护肤品、化妆品及食品（包括保健食品）等产品，非试用装一经拆开恕不接受退、换货。<br>
+3．奢侈品、收藏品如无质量问题恕不接受退、换货。<br>
+4．黄金、珠宝属于贵重商品，如无质量问题不接受退、换货。<br>
+联系方式：拨打客服热线：4008-518-518	
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div id="m6-con">
+				<div class="m6-bot">
+					<ul>
+						<li style="background: url(../img/m51.gif) no-repeat 18px 6px;">
+							<span>购物指南</span>
+							<div class="li">
+								<a href="#">用户注册流程</a><br>
+								<a href="#">电视会员登录</a><br>
+								<a href="#">网站订购流程</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m52.gif) no-repeat 18px 6px;">
+							<span>会员中心</span>
+							<div class="li">
+								<a href="#">会员等级</a><br>
+								<a href="#">会员权益</a><br>
+								<a href="#">我的幸福金</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m53.gif) no-repeat 18px 6px;">
+							<span>配送服务</span>
+							<div class="li">
+								<a href="#">配送范围</a><br>
+								<a href="#">配送时间</a><br>
+								<a href="#">运费说明</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m54.gif) no-repeat 18px 6px;">
+							<span>支付说明</span>
+							<div class="li">
+								<a href="#">货到付款</a><br>
+								<a href="#">在线支付</a><br>
+								<a href="#">幸福购物卡</a>
+							</div>								
+						</li>
+						<li style="background: url(../img/m55.gif) no-repeat 18px 6px;">
+							<span>顾客服务</span>
+							<div class="li">
+								<a href="#">服务政策总则</a><br>
+								<a href="#">退换货政策</a><br>
+								<a href="#">先行赔付</a>
+							</div>								
+						</li>
+					</ul>
+				</div>					
+		</div>
+		<div id="bottom">
+			<div id="bot-con">
+				<div class="b-pic1"></div>
+				<ul>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">招商合作</a></li>
+					<li><a href="#">成为供应商</a></li>
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">友情链接</a></li>
+					<li><a href="#"><img src="../img/bottom2.jpg"></a></li>
+				</ul>
+				<div class="b-txt">
+					Copyright©2010-2016 cnrmall. All Rights Reserved<br>
+					京ICP备10038858号 京公网安备：11011502002190<br>
+					食品流通许可证编号：SP1101151210063489<br>
+					企业营业执照注册号：110102012202484   企业法人： 董铁明<br>
+					央广幸福购物（北京）有限公司<br>
+					住所：北京市大兴区西红门镇北兴路（东段）2号星光影视园新媒体大厦<br>
+					经营场所：北京市大兴区西红门镇北兴路（东段）2号院20号楼5层 5018号<br>
+					我司投诉专线为：4008518518转5号键<br>
+					北京市工商行政管理局大兴分局兴政街工商所，投诉监督电话：010-69254218
+				</div>
+			</div>
+		</div>
+		<script src="../js/product.js"></script>
+		<script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>
